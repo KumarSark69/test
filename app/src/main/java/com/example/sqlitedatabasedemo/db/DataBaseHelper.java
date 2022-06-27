@@ -30,7 +30,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + Contact.TABLE_NAME);
         onCreate(sqLiteDatabase);
-
+        SQLiteDatabase db=getReadableDatabase();
 
 
     }
